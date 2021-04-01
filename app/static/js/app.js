@@ -30,7 +30,7 @@ const NewsList = ('news-list', {
       </div>
       <ul class="news__list list-unstyled">
           <div class='row'>
-            <li v-for="article in articles" class="news__item col-lg-4 mb-4">
+            <li v-for="article in articles" class="news__item card-deck col-lg-4 mb-4">
               <div class='card' style= "border-top: 5px solid #7fcaaf;">
                 <div class='card-body'>
                   <div class='card-title'>
@@ -53,7 +53,7 @@ const NewsList = ('news-list', {
 
         fetch('https://newsapi.org/v2/top-headlines?country=us', {
                 headers: {
-                    'Authorization': 'Bearer <your-api-token>'
+                    'Authorization': 'Bearer 75ca98965a1a4f62b4f1b42399f624ad'
                 }
             })
             .then(function(response) {
